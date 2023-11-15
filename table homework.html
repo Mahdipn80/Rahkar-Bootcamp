@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table, th, td{
+            border: 1px solid black;
+            text-align: center;
+        }
+        thead{
+            background-color: red;
+        }
+        tfoot{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>نام</th>
+                <th>نام خانوادگی</th>
+                <th>موبایل</th>
+                <th>سن</th>
+            </tr>
+        </thead>
+        <tr>
+            <td>مهدی</td>
+            <td>پناهی</td>
+            <td>09912365489</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>محمد</td>
+            <td rowspan="2" >پناهی</td>
+            <td>09123654789</td>
+            <td>50</td>
+        </tr>
+        <tr>
+            <td>مریم</td>
+            <td colspan="2" rowspan="2">09193256987</td>
+        </tr>
+        <tr>
+            <td>اصغر</td>
+            <td >فرهادی</td>
+        </tr>
+        <tfoot>
+            <tr>
+                <td>uyfyuhfh</td>
+                <td>yugjhgj</td>
+                <td>hjgjhvj</td>
+                <td>iug</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
