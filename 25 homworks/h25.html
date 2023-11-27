@@ -1,0 +1,27 @@
+<html>
+    <script>
+        function findDuplicateNumbers(arr) {
+        let counts = {};
+        let duplicates = {};
+
+        for (let i = 0; i < arr.length; i++) {
+            let num = arr[i];
+            counts[num] = counts[num] ? counts[num] + 1 : 1;
+            if (counts[num] > 1) {
+            duplicates[num] = counts[num];
+            }
+        }
+
+        if (Object.keys(duplicates).length === 0) {
+            return "No duplicate numbers found";
+        } else {
+            return duplicates;
+        }
+        }
+
+        // Example usage
+        let numbers = [1, 2, 3, 4, 4, 5, 6, 6];
+        console.log(findDuplicateNumbers(numbers)); // Output: {4: 2, 6: 2}
+
+    </script>
+</html>

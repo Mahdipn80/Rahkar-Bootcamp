@@ -1,0 +1,18 @@
+<html>
+    <script>
+        function findAndPrintNumbers() {
+        let sum = 0;
+        for (let i = 100; i < 1000; i++) {
+            let onesDigit = i % 10;
+            if (onesDigit === 4) {
+            console.log("Number: " + i);
+            sum += i;
+            }
+        }
+        console.log("Sum of the numbers: " + sum);
+        }
+
+        findAndPrintNumbers();
+
+    </script>
+</html>

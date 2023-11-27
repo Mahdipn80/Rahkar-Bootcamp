@@ -1,0 +1,15 @@
+<html>
+    <script>
+        function isDivisible(num1, num2) {
+        if (num1 % num2 === 0 || num2 % num1 === 0) {
+            return "این دو عدد به همدگیر بخش پذیر هستند";
+        } else {
+            return "این دو عدد به همدگیر بخش پذیر نیستند";
+        }
+        }
+
+        var input1 = prompt("لطفا عدد اول را وارد کنید:");
+        var input2 = prompt("لطفا عدد دوم را وارد کنید:");
+        console.log(isDivisible(input1, input2)); // خروجی: این دو عدد به همدگیر بخش پذیر هستند
+    </script>
+</html>

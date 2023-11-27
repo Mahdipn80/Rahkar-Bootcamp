@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function factorial(num) {
+        if (num === 0 || num === 1)
+            return 1;
+        for (var i = num - 1; i >= 1; i--) {
+            num *= i;
+        }
+        return num;
+        }
+
+        var input = prompt("لطفا عدد مورد نظر خود را وارد کنید:");
+        var result = factorial(input);
+        console.log("فاکتوریل عدد وارد شده: " + result);
+    </script>
+</html>

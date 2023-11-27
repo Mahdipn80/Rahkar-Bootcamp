@@ -1,0 +1,23 @@
+
+<html>
+    <script>
+        function isPerfectNumber(num) {
+            let sum = 0;
+            for (let i = 1; i <= num / 2; i++) {
+                if (num % i === 0) {
+                sum += i;
+                }
+            }
+            return sum === num; 
+        }
+
+        function findPerfectNumbers() {
+            for (let i = 1; i <= 999; i++) {
+                if (isPerfectNumber(i)) {
+                console.log(i);
+                }
+            }
+        }
+        findPerfectNumbers();
+    </script>
+</html>

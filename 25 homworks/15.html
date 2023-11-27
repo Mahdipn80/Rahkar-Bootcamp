@@ -1,0 +1,14 @@
+<html>
+    <script>
+        function reverseNumber(num) {
+        let reversed = 0;
+        while (num > 0) {
+            reversed = (reversed * 10) + (num % 10);
+            num = Math.floor(num / 10);
+        }
+        console.log(reversed);
+        }
+        var input = prompt("لطفا عدد مورد نظر خود را وارد کنید:");
+        reverseNumber(input);
+    </script>
+</html>

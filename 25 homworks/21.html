@@ -1,0 +1,28 @@
+<html>
+    <script>
+        function findAmicableNumbers() {
+        for (var num1 = 10; num1 <= 1500; num1++) {
+            var sumOfDivisorsNum1 = 0;
+            for (var i = 1; i < num1; i++) {
+            if (num1 % i === 0) {
+                sumOfDivisorsNum1 += i;
+            }
+            }
+            for (var num2 = num1 + 1; num2 <= 1500; num2++) {
+            var sumOfDivisorsNum2 = 0;
+            for (var j = 1; j < num2; j++) {
+                if (num2 % j === 0) {
+                sumOfDivisorsNum2 += j;
+                }
+            }
+            if (sumOfDivisorsNum1 === num2 && sumOfDivisorsNum2 === num1) {
+                console.log(num1 + " و " + num2);
+            }
+            }
+        }
+        }
+
+        findAmicableNumbers();
+
+    </script>
+</html>

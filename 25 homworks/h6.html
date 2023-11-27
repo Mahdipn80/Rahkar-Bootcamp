@@ -1,0 +1,19 @@
+<html>
+    <script>
+        function greatestCommonDivisor(num1, num2) {
+        var gcd = 1;
+        for (var i = 1; i <= num1 && i <= num2; i++) {
+            if (num1 % i === 0 && num2 % i === 0) {
+            gcd = i;
+            }
+        }
+        return gcd;
+        }
+
+        var input1 = prompt("لطفا عدد اول را وارد کنید:");
+        var input2 = prompt("لطفا عدد دوم را وارد کنید:");
+        var result = greatestCommonDivisor(input1, input2);
+        console.log("بزرگترین مقسوم علیه مشترک: " + result);
+
+    </script>
+</html>

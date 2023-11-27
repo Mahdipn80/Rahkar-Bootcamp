@@ -1,0 +1,22 @@
+<html>
+    <script>
+        function findNumbers() {
+        var numbers = [];
+        var count = 0;
+        var sum = 0;
+        for (var i = 1; i <= 300; i++) {
+            if (i % 3 === 0 && i % 7 === 0) {
+            numbers.push(i);
+            count++;
+            sum += i;
+            }
+        }
+        console.log("اعدادی که هم بر 3 و هم بر 7 بخش پذیر هستند: " + numbers);
+        console.log("تعداد این اعداد: " + count);
+        console.log("مجموع این اعداد: " + sum);
+        }
+
+        findNumbers();
+
+    </script>
+</html>

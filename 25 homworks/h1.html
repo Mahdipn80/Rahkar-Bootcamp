@@ -1,0 +1,20 @@
+<html>
+    <script>
+   function countAndSum(){
+            let myList= []; let count = 0; let sum = 0;
+    
+            for (let x = 0; x < 5; x++) {
+                let input =parseInt( prompt("Enter your option:"));
+                myList.push(input);
+                if (input > 0){
+                count++;
+                } else {
+                sum = sum + input;
+                }
+            }
+            return console.log("Number of mosbat numbers:",count),
+            console.log("Sum of manfi numbers: ",sum);
+        }
+        countAndSum();
+    </script>
+</html>

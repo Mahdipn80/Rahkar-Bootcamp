@@ -1,0 +1,15 @@
+<html>
+    <script>
+        function printDigits(number) {
+        let hundreds = Math.floor(number / 100);
+        let tens = Math.floor((number % 100) / 10);
+        let ones = number % 10;
+        console.log("Hundreds: " + hundreds);
+        console.log("Tens: " + tens);
+        console.log("Ones: " + ones);
+        }
+        var input = prompt("لطفا عدد مورد نظر خود را وارد کنید:");
+        printDigits(input);
+
+    </script>
+</html>
