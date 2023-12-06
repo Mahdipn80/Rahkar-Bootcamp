@@ -1,0 +1,14 @@
+<nav class="navbar bg-body-tertiary">
+    <form class="container-fluid justify-content-starts">
+        <ul class="nav nav-tabs">
+            <a class="navbar-brand nav-link cursor"
+                *ngFor="let item of menuItems"
+                (click)="onclick(item.link)">
+                {{ item.title }}
+            </a>
+            <button (click)="onClicicklogin()" class="btn btn-outline-success">Login</button>
+        </ul>
+    </form>
+
+</nav>
+<router-outlet></router-outlet>
